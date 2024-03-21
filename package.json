@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Creed128/bmi-calculator/issues"
   },
-  "homepage": "https://github.com/Creed128/bmi-calculator#readme"
+  "homepage": "https://github.com/Creed128/bmi-calculator#readme",
+  "dependencies": {
+    "express": "^4.19.1"
+  }
 }
