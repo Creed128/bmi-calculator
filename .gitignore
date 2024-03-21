@@ -1,0 +1,49 @@
+# Abhängigkeiten
+/node_modules
+
+# Log-Dateien
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime-Daten
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Verzeichnis für Produktionsbuilds
+/build
+
+# dotenv Umgebungsvariablen-Dateien
+.env
+.env.test
+
+# Debugger-Dateien
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IDE - VSCode Ordner
+.vscode/*
+
+# IDE - WebStorm/IntelliJ/PyCharm
+.idea/*
+
+# Betriebssystem-Dateien
+.DS_Store
+/*.env.local
+
+# Optional npm cache
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional tsc cache
+*.tsbuildinfo
+
+# Optional IDE
+*.idea
