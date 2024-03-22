@@ -3,15 +3,19 @@ name: CI
 on: [push]
 
 jobs:
-  cypress-run:
+  e2e-tests:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14' # Oder die Version, die Ihr Projekt verwendet
+        node-version: '14' # or the version you need
     - name: Install dependencies
       run: npm install
+    - name: Start server
+      run: npm start &
+    - name: Wait for server to be up
+      run: sleep 10 # Adjust the timing as needed
     - name: Run Cypress tests
       run: npx cypress run
