@@ -4,8 +4,9 @@ function updateUI() {
     const weight = document.getElementById('weight').value;
     const height = document.getElementById('height').value;
     const bmi = calculateBMI(weight, height);
-    document.getElementById('result').textContent = 'Dein BMI: ${bmi}';
+    document.getElementById('result').textContent = `Dein BMI: ${bmi}`; // Backticks verwenden
 }
+
 
 function calculateBMI(weight, height) {
     const heightInMeters = height / 100;
